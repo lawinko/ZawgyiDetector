@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "ZawgyiDetector"
+  spec.name         = "zawgyidetector"
   spec.version      = "1.0.2"
   spec.summary      = "Zawgyi detection tool"
   spec.description  = <<-DESC
