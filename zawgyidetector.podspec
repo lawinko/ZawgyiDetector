@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "zawgyidetector"
-  spec.version      = "1.0"
+  spec.name         = "ZawgyiDetector"
+  spec.version      = "1.0.2"
   spec.summary      = "Zawgyi detection tool"
   spec.description  = <<-DESC
   This repository is customized platform support of https://github.com/google/myanmar-tools to use in iOS and macOS by Swift language.
