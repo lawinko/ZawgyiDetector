@@ -1,0 +1,6 @@
+language: swift
+os: osx
+osx_image: xcode11.5
+xcode_sdk: iphonesimulator13.5
+script:
+  - xcodebuild clean build test -project zawgyidetector.xcodeproj -scheme zawgyidetector -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.5,name=iPhone 8" -enableCodeCoverage YES CODE_SIGNING_REQUIRED=NO
