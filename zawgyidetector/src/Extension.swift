@@ -1,8 +1,10 @@
 //
 //  Extension.swift
-//  myanmartools
+//  ZawgyiDetector
 //
 //  Created by La Win Ko on 7/6/20.
+//  Copyright © 2020 La Win Ko. All rights reserved.
+//
 
 import Foundation
 

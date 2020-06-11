@@ -3,18 +3,20 @@
 //  ZawgyiDetector
 //
 //  Created by La Win Ko on 5/6/20.
+//  Copyright © 2020 La Win Ko. All rights reserved.
 //
 
 import Foundation
 
-open class ZawgyiDetector{
+@objc open class ZawgyiDetector: NSObject{
     
     private var params: [[Float32]] = [[]]
     private var mapping: [Character: Int] = [:]
     
-    public static let shared: ZawgyiDetector = ZawgyiDetector()
+    @objc public static let shared: ZawgyiDetector = ZawgyiDetector()
     
-    private init(){
+    private override init(){
+        super.init()
         do{
             if let dataURL = Bundle(for: ZawgyiDetector.self).url(forResource: "zawgyiUnicodeModel", withExtension: "dat"){
                 let markov = ZawgyiUnicodeMarkovModel(dataURL: dataURL)
@@ -28,7 +30,7 @@ open class ZawgyiDetector{
         }
     }
     
-    open func predict(input: String,verbose: Bool = false) -> Double{
+    @objc open func predict(input: String,verbose: Bool = false) -> Double{
         if verbose{
             print("Running detector on string: \(input)")
         }
