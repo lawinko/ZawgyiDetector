@@ -22,7 +22,7 @@ end
 
 ```
 /**
-create an instance of ZawgyiDetector class and pass string input that 
+create a singleton instance of ZawgyiDetector class and pass string input that 
 you want to predict into predict function
 **/
 
