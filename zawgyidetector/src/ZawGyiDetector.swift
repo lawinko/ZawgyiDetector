@@ -1,6 +1,6 @@
 //
 //  ZawGyiDetector.swift
-//  testPackage
+//  ZawgyiDetector
 //
 //  Created by La Win Ko on 5/6/20.
 //
