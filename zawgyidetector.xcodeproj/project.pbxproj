@@ -32,8 +32,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10C4EA2E2569787000BD4682 /* zawgyidetectorTestss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zawgyidetectorTestss.swift; sourceTree = "<group>"; };
-		10C4EA302569787000BD4682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C4EA4D256981D200BD4682 /* zawgyiUnicodeModel.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = zawgyiUnicodeModel.dat; sourceTree = "<group>"; };
 		98B6641424913D4F008B22E7 /* zawgyidetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = zawgyidetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B6641724913D4F008B22E7 /* zawgyidetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zawgyidetector.h; sourceTree = "<group>"; };
@@ -66,21 +64,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10C4EA2D2569787000BD4682 /* zawgyidetectorTestss */ = {
-			isa = PBXGroup;
-			children = (
-				10C4EA2E2569787000BD4682 /* zawgyidetectorTestss.swift */,
-				10C4EA302569787000BD4682 /* Info.plist */,
-			);
-			path = zawgyidetectorTestss;
-			sourceTree = "<group>";
-		};
 		98B6640A24913D4F008B22E7 = {
 			isa = PBXGroup;
 			children = (
 				98B6641624913D4F008B22E7 /* zawgyidetector */,
 				98B6642124913D50008B22E7 /* zawgyidetectorTests */,
-				10C4EA2D2569787000BD4682 /* zawgyidetectorTestss */,
 				98B6641524913D4F008B22E7 /* Products */,
 			);
 			sourceTree = "<group>";
