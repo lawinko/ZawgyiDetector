@@ -52,7 +52,7 @@ extension Collection where Element == UInt8 {
 extension Character
 {
     //Return UInt32 of one character
-    func unicodeScalarCodePoint() -> UInt32
+    public func unicodeScalarCodePoint() -> UInt32
     {
         let characterString = String(self)
         let scalars = characterString.unicodeScalars

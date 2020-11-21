@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "zawgyidetector"
-  spec.version      = "1.1"
+  spec.version      = "1.2"
   spec.summary      = "Zawgyi detection tool"
   spec.description  = <<-DESC
   This repository is customized platform support of https://github.com/google/myanmar-tools to use in iOS and macOS by Swift language.

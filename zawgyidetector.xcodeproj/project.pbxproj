@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10C4E9FB2569765A00BD4682 /* ZawGyiDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6643124913D87008B22E7 /* ZawGyiDetector.swift */; };
+		10C4EA4525697BC600BD4682 /* ZawgyiUnicodeMarkovModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6643224913D87008B22E7 /* ZawgyiUnicodeMarkovModel.swift */; };
+		10C4EA4A25697BC800BD4682 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6643324913D87008B22E7 /* Extension.swift */; };
+		10C4EA4E256981D200BD4682 /* zawgyiUnicodeModel.dat in Resources */ = {isa = PBXBuildFile; fileRef = 10C4EA4D256981D200BD4682 /* zawgyiUnicodeModel.dat */; };
+		10C4EA4F256981D200BD4682 /* zawgyiUnicodeModel.dat in Resources */ = {isa = PBXBuildFile; fileRef = 10C4EA4D256981D200BD4682 /* zawgyiUnicodeModel.dat */; };
 		98B6641E24913D50008B22E7 /* zawgyidetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B6641424913D4F008B22E7 /* zawgyidetector.framework */; };
 		98B6642324913D50008B22E7 /* zawgyidetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6642224913D50008B22E7 /* zawgyidetectorTests.swift */; };
 		98B6642524913D50008B22E7 /* zawgyidetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B6641724913D4F008B22E7 /* zawgyidetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98B6643424913D87008B22E7 /* zawgyiUnicodeModel.dat in Resources */ = {isa = PBXBuildFile; fileRef = 98B6642F24913D87008B22E7 /* zawgyiUnicodeModel.dat */; };
 		98B6643524913D87008B22E7 /* ZawGyiDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6643124913D87008B22E7 /* ZawGyiDetector.swift */; };
 		98B6643624913D87008B22E7 /* ZawgyiUnicodeMarkovModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6643224913D87008B22E7 /* ZawgyiUnicodeMarkovModel.swift */; };
 		98B6643724913D87008B22E7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6643324913D87008B22E7 /* Extension.swift */; };
@@ -28,13 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10C4EA2E2569787000BD4682 /* zawgyidetectorTestss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zawgyidetectorTestss.swift; sourceTree = "<group>"; };
+		10C4EA302569787000BD4682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C4EA4D256981D200BD4682 /* zawgyiUnicodeModel.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = zawgyiUnicodeModel.dat; sourceTree = "<group>"; };
 		98B6641424913D4F008B22E7 /* zawgyidetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = zawgyidetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B6641724913D4F008B22E7 /* zawgyidetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zawgyidetector.h; sourceTree = "<group>"; };
 		98B6641824913D4F008B22E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98B6641D24913D50008B22E7 /* zawgyidetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zawgyidetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B6642224913D50008B22E7 /* zawgyidetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zawgyidetectorTests.swift; sourceTree = "<group>"; };
 		98B6642424913D50008B22E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98B6642F24913D87008B22E7 /* zawgyiUnicodeModel.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = zawgyiUnicodeModel.dat; sourceTree = "<group>"; };
 		98B6643124913D87008B22E7 /* ZawGyiDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZawGyiDetector.swift; sourceTree = "<group>"; };
 		98B6643224913D87008B22E7 /* ZawgyiUnicodeMarkovModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZawgyiUnicodeMarkovModel.swift; sourceTree = "<group>"; };
 		98B6643324913D87008B22E7 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -60,11 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10C4EA2D2569787000BD4682 /* zawgyidetectorTestss */ = {
+			isa = PBXGroup;
+			children = (
+				10C4EA2E2569787000BD4682 /* zawgyidetectorTestss.swift */,
+				10C4EA302569787000BD4682 /* Info.plist */,
+			);
+			path = zawgyidetectorTestss;
+			sourceTree = "<group>";
+		};
 		98B6640A24913D4F008B22E7 = {
 			isa = PBXGroup;
 			children = (
 				98B6641624913D4F008B22E7 /* zawgyidetector */,
 				98B6642124913D50008B22E7 /* zawgyidetectorTests */,
+				10C4EA2D2569787000BD4682 /* zawgyidetectorTestss */,
 				98B6641524913D4F008B22E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +118,7 @@
 		98B6642E24913D87008B22E7 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				98B6642F24913D87008B22E7 /* zawgyiUnicodeModel.dat */,
+				10C4EA4D256981D200BD4682 /* zawgyiUnicodeModel.dat */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -181,7 +197,7 @@
 		98B6640B24913D4F008B22E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "La Win Ko";
 				TargetAttributes = {
@@ -217,7 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B6643424913D87008B22E7 /* zawgyiUnicodeModel.dat in Resources */,
+				10C4EA4E256981D200BD4682 /* zawgyiUnicodeModel.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C4EA4F256981D200BD4682 /* zawgyiUnicodeModel.dat in Resources */,
 				98B6643A24913D95008B22E7 /* compatibility.tsv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,7 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C4EA4525697BC600BD4682 /* ZawgyiUnicodeMarkovModel.swift in Sources */,
+				10C4E9FB2569765A00BD4682 /* ZawGyiDetector.swift in Sources */,
 				98B6642324913D50008B22E7 /* zawgyidetectorTests.swift in Sources */,
+				10C4EA4A25697BC800BD4682 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,9 +406,9 @@
 		98B6642924913D50008B22E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 54NA4569RV;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -402,6 +422,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lawinko.zawgyidetector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -411,9 +433,9 @@
 		98B6642A24913D50008B22E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 54NA4569RV;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -427,6 +449,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lawinko.zawgyidetector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -437,6 +461,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54NA4569RV;
 				INFOPLIST_FILE = zawgyidetectorTests/Info.plist;
@@ -446,7 +472,10 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lawinko.zawgyidetectorTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,6 +485,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54NA4569RV;
 				INFOPLIST_FILE = zawgyidetectorTests/Info.plist;
@@ -465,7 +496,10 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lawinko.zawgyidetectorTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

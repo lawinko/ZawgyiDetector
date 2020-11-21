@@ -21,24 +21,24 @@ class zawgyidetectorTests: XCTestCase {
         let allAscii: String = "blah blah blah blah blah"
         let mixedUnicode: String = "<span>blah blah ဒဂုန်ဦးစန်းငွေ </span> blah blah blah blah"
         let mixedZawgyi: String = "blah blah blah blah blah သို႔သြားပါ။ blah blah blah"
-        XCTAssertTrue(detector.predict(input: allAscii) == -1 * Double.infinity, "ALL ASCII")
-        XCTAssertTrue(detector.predict(input: mixedUnicode) < 0.01, "Mixed Unicode")
-        XCTAssertTrue(detector.predict(input: mixedZawgyi) > 0.99, "Mixed Zawgyi")
+        XCTAssertEqual(detector.predict(input: allAscii), -1 * Double.infinity)
+        XCTAssertLessThan(detector.predict(input: mixedUnicode), 0.01)
+        XCTAssertGreaterThan(detector.predict(input: mixedZawgyi), 0.99)
     }
         
     func testStrongUnicodeReturnsLowScore() throws{
         let strongUnicode: String = "အပြည်ပြည်ဆိုင်ရာ လူ့အခွင့်အရေး ကြေညာစာတမ်း"
-        XCTAssertTrue(detector.predict(input: strongUnicode) < 0.01, "Strong Unicode")
+        XCTAssertLessThan(detector.predict(input: strongUnicode), 0.01)
     }
     
     func testStrongZawgyiReturnsHighScore() throws{
         let strongZawgyi: String = "အျပည္ျပည္ဆိုင္ရာ လူ႔အခြင့္အေရး ေၾကညာစာတမ္း"
-        XCTAssertTrue(detector.predict(input: strongZawgyi) > 0.999, "Strong Zawgyi")
+        XCTAssertGreaterThan(detector.predict(input: strongZawgyi), 0.999)
     }
 
     func testIgnoreNumerals() throws{
-        XCTAssertTrue(detector.predict(input: "၉၆.၀ kHz") == -1 * Double.infinity)
-        XCTAssertTrue(detector.predict(input: "၂၄၀၉ ဒဂုန်") == detector.predict(input: "ဒဂုန်"))
+        XCTAssertEqual(detector.predict(input: "၉၆.၀ kHz"), -1 * Double.infinity)
+        XCTAssertEqual(detector.predict(input: "၂၄၀၉ ဒဂုန်"), detector.predict(input: "ဒဂုန်"))
     }
         
     func testCompatibility() throws{
@@ -49,7 +49,7 @@ class zawgyidetectorTests: XCTestCase {
             for nextLine in nextLineSplit{
                 let split = nextLine.components(separatedBy: "\t")
                 if split.count ==  2{
-                    XCTAssertTrue(detector.predict(input: split[1]) == Double(split[0]))
+                    XCTAssertEqual(detector.predict(input: split[1]), Double(split[0]))
                 }
             }
         }catch (_){
