@@ -24,11 +24,24 @@ github "lawinko/ZawgyiDetector" ~> 1.2
 
 Create a singleton instance of ZawgyiDetector class and pass input string that 
 you want to predict into predict function.
-```
+```swift
+import zawgyidetector
+
 let detector = ZawgyiDetector.shared
 detector.predict(input: "မ္း")
 
 // score is now 0.999772 (very likely Zawgyi)
+```
+
+Returns negative infinity when input is not burmese
+
+```swift
+let rawStr = "hello, world"
+let probability = detector.predict(input: rawStr) // returns -Inf
+
+if probability.isInfinite { 
+    // Not burmese text. No need to convert
+}
 ```
 
 ## Zawgyi <-> Unicode conversion
